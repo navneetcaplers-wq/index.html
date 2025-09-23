@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #135251;
+        }
+        body {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body style="border: 5px solid blue;">
+    <div>
+        <form>
+            <h1>Reservation Request</h1>
+            <fieldset>
+                <legend style=" color:blue ;" >General information</legend> 
+                <label for="arival date">arival date <input type="date" name="arival date " id="date"> </label>
+            <span style="color: red;">    arrival date is invalid</span>
+            <br>
+            <br>
+                <label for="Nights"> Nights <input type="number" name="" id="Nights"></label>
+              <span style="color: red;"> Nights must be a number</span>
+                <br><br>
+                <label for="adults">adults <input type="number" name="adults" id="adults"></label>
+                <br><br>
+                <label for="childern">childern<input type="number" name="childern" id="childern"></label>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend style=" color:blue ;">Preferences</legend>
+                <label for="room type">room type </label>
+                <label for="standard"> standard<input type="radio" name="roomtype" id="standard"></label>
+                <label for="business"> business<input type="radio" name="roomtype" id="business"></label>
+                <label for="suite">suite <input type="radio" name="roomtype" id="suite"></label>
+                <br><br>
+
+                <label for="Bedtype">Bed type </label>
+                <label for="king"> king <input type="radio" name="bedtype" id="king"></label>
+                <label for="Double Double">Double Double <input type="radio" name="bedtype" id="Double Double"></label>
+                <label for="smoking">smoking <input type="radio" name="bedtype" id="smoking"> </label>
+            </fieldset>
+            <fieldset>
+                <legend style=" color:blue ;">Contact information</legend>
+                <label for="name" id="Name">Name <input type="text" name="Name" id="Name"></label> <br>
+                <label for="email" id="email">email <input type="email" name="email" id="email"></label><br>
+                <label for="phone" id="phone">phone <input type="phone" name="phone" id="phone"></label>
+            </fieldset>
+
+            <input type="submit" name="submit"  id="">
+            <input type="reset" name="clear" id="clear">
+        </form>
+    </div>
+</body>
+
+</html>
