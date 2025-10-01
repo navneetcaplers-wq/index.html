@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flowerUl {
+        list-style-type: none; /* Remove default bullets */
+        padding-left: 0; /* Adjust padding as needed */
+      }
+
+      .flowerLi::before {
+        content: ""; /* Required for pseudo-elements */
+        display: inline-block; /* Allows width/height to be set */
+        width: 20px; /* Set desired width */
+        height: 20px; /* Set desired height */
+        background-image: url("download.jpeg");
+        background-size: contain; /* or cover, or specific dimensions */
+        background-repeat: no-repeat;
+        margin-right: 5px; /* Adjust spacing between image and text */
+        vertical-align: middle; /* Align image vertically with text */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unorderd list</h1>
+    <p>Cars</p>
+    <ul style="list-style-type: none">
+      <li>
+        Maruti
+        <ul>
+          <li>Maruti Wegon R</li>
+          <li>Alto</li>
+        </ul>
+      </li>
+      <li>Wolkswegan</li>
+      <li>MG</li>
+      <li>toyota</li>
+    </ul>
+    <h1>Orderd list</h1>
+    <p>Bike</p>
+    <ol type="A" start="24">
+      <li>Hero</li>
+      <li>Honda</li>
+      <li>Bajaj</li>
+      <li>Ola</li>
+    </ol>
+    <h1>Description list</h1>
+    <p>Drinks</p>
+    <dl>
+      <dt>Colddrink</dt>
+      <dd>Maaza, Frooti, fanta</dd>
+      <dt>Softdrinks</dt>
+    </dl>
+    <h1>Colors</h1>
+    <ul class="flowerUl">
+      <li class="flowerLi">Blaak</li>
+      <li class="flowerLi">blue</li>
+      <li class="flowerLi">green</li>
+      <li class="flowerLi">yellow</li>
+    </ul>
+  </body>
+</html>
